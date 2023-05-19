@@ -1,4 +1,4 @@
-/* App1 */
+/* App 1 */
 :root {
   --background-color1: #3498db;
   --background-color2: #fff;
@@ -83,7 +83,7 @@
 
 
 
-/* App2 */
+/* App 2 */
 .div14 {
   margin: 200px 0px 0px 0px;
   width: 200px;
@@ -106,7 +106,7 @@
 
 
 
-/* App3 */
+/* App 3 */
 .zoom {
   background-color: green;
   transition: transform .2s;
@@ -114,9 +114,11 @@
   margin-top: 100px;
   border-radius: 5px;
 }
+
 .zoom:hover {
   transform: scale(1.5);
 }
+
 .zoom1 {
   background-color: green;
   transition: transform .2s;
@@ -124,6 +126,253 @@
   margin-top: 50px;
   border-radius: 5px;
 }
+
 .zoom1:hover {
   transform: scale(.5);
+}
+
+
+
+/* App 4 */
+.middle {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.btn5 {
+  display: inline-block;
+  height: 50px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0px 5px 15px -5px #00000070;
+  color: var(--background-color1);
+  overflow: hidden;
+  position: relative;
+}
+
+.btn5 h3 {
+  line-height: 40px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+
+.btn5:hover h3 {
+  transform: scale(1.4);
+  color: #f1f1f1;
+}
+
+.btn5::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 130%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 40%;
+}
+
+.btn6::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 130%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btn7::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 130%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: 80%;
+  top: 45%;
+}
+
+.btn8::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 130%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -90%;
+  top: -75%;
+}
+
+.btn9::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 130%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: 90%;
+  top: -78%;
+}
+
+.btn5:hover::before {
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+
+
+/* App5 */
+.container a {
+  position: relative;
+  width: 160px;
+  height: 60px;
+  display: inline-block;
+  background: #fff;
+  margin: 20px;
+}
+
+.container a:before,
+.container a:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: red;
+  transition: 0.5s;
+}
+
+.container a:nth-child(1):before,
+.container a:nth-child(1):after {
+  background: linear-gradient(45deg, #00ff15, #00ff1531, rgba(255, 255, 0, 0.178), yellow);
+}
+
+.container a:hover:before {
+  inset: -5px;
+}
+
+.container a:hover:after {
+  inset: -3px;
+  filter: blur(10px);
+}
+
+.container a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: #0e1538;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  border: 1px solid #040a29;
+}
+
+.container a span::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -15px;
+  height: 100%;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.281);
+  transform: skew(25deg);
+}
+
+
+
+/* App 6 */
+.background {
+  background: gray;
+}
+
+.button {
+  position: relative;
+  width: 230px;
+  height: 60px;
+  border-radius: 60px;
+  background: rgba(0, 0, 0, 0.199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+  padding-left: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.button:hover {
+  padding-left: 0px;
+  padding-right: 40px;
+  color: rgb(255, 255, 255, 1);
+
+}
+
+.button span {
+  position: absolute;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #00ff15;
+  transition: .5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1.5em;
+}
+
+.button:hover span {
+  left: calc(100% - 55px);
+}
+
+.button:hover .span {
+  left: calc(100% - 55px);
+  transform: rotate(180deg);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateX(-180px) skew(30deg);
+  transition: 0.75s ease-in-out;
+}
+
+.button:hover:after {
+  transform: translateX(180px) skew(30deg);
 }
