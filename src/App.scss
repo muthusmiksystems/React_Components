@@ -1,0 +1,659 @@
+// @media screen and (min-width:1300px) and (max-width:1500px) {
+//     .login {
+//         margin-left: 900px;
+//     }
+
+//     .help {
+//         // height: auto !important;
+//         // width: 100%;
+//         background-image: linear-gradient(to top, #ffffff7e, #ffffff7e), url(./image/help.svg);
+//         background-size: 100% 100%;
+
+//         .helptext {
+//             margin-left: 150px;
+//         }
+
+//         .helpbox {
+//             height: 400px;
+//             width: 140px;
+//             margin: 100px 100px;
+//             border: 3px solid black;
+//         }
+
+//         .helpbox1 {
+//             height: 400px;
+//             width: 140px;
+//             margin: 100px 0px;
+//             border: 3px solid black;
+//         }
+//     }
+// }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+.icon {
+    font-size: 1.7em;
+}
+
+.login {
+    margin-left: 700px;
+}
+
+li {
+    margin-top: 40px;
+}
+
+.homeimg {
+    height: 630px;
+    width: 100%;
+    background-image: linear-gradient(to top, #ffffff7e, #ffffff7e), url("./image/home.gif");
+    background-size: 100% 100%;
+    text-align: center;
+    background-attachment: fixed;
+
+    h4 {
+        padding-top: 250px;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+}
+
+.aboutimg {
+    width: 50vw;
+    height: 50vw;
+}
+
+.about {
+    margin-left: 150px;
+}
+
+.hr {
+    width: 100px;
+    border-top: 3px solid #000000;
+    opacity: 100%;
+}
+
+.help {
+    height: 900px;
+    width: 100%;
+    background-image: linear-gradient(to top, #ffffff7e, #ffffff7e), url(./image/help.svg);
+    background-size: 100% 100%;
+
+
+    .helptext {
+        margin-left: 150px;
+    }
+
+    .helpbox {
+        height: 470px;
+        width: 140px;
+        margin: 100px 150px;
+        border: 3px solid black;
+        text-align: center;
+
+        .helpboxhr {
+            margin: 0px 10%;
+            border-top: 3px solid #000000;
+            opacity: 100%;
+        }
+
+        .btn1 {
+            margin-top: 36%;
+        }
+    }
+
+    .helpbox1 {
+        height: 470px;
+        width: 140px;
+        margin: 100px -100px;
+        border: 3px solid black;
+        text-align: center;
+
+        .helpboxhr {
+            margin: 0px 10%;
+            border-top: 3px solid #000000;
+            opacity: 100%;
+        }
+
+        .btn1 {
+            margin-top: 36%;
+        }
+    }
+
+    .services {
+        background-color: #000000;
+        color: white;
+        margin-left: 41%;
+        width: 18%;
+    }
+
+    .services:hover {
+        background-color: #fff;
+        color: #000000;
+    }
+}
+
+.footerbg{
+    background-color: #57bbbf;
+    height: 635px;
+    width: 100%;
+
+    .helpboxhr {
+        margin: 0px 10%;
+        border-top: 3px solid #000000;
+        opacity: 100%;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+        color: #000000;
+        opacity: 100%;
+    }
+    .footericon{
+        font-size: x-large;
+        color: #000000;
+    }
+    .form-control{
+        border: .2em solid black;
+        background-color: transparent;
+        margin-top: 5px;
+    }
+    .form-control:hover{
+        border: .3em solid black;
+        background-color: transparent;
+    }
+    label{
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (min-width:1000px) and (max-width:1200px) {
+    .login {
+        margin-left: 430px;
+    }
+
+    .aboutimg {
+        width: 50vw;
+        height: 60vw;
+    }
+
+    .help {
+        height: 750px;
+        width: 100%;
+        background-image: linear-gradient(to top, #ffffff7e, #ffffff7e), url(./image/help.svg);
+        background-size: 100% 100%;
+    
+    
+        .helptext {
+            margin-left: 150px;
+        }
+    
+        .helpbox {
+            height: 470px;
+            width: 140px;
+            margin: 100px 100px;
+            border: 3px solid black;
+            text-align: center;
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .helpbox1 {
+            height: 470px;
+            width: 140px;
+            margin: 100px -50px;
+            border: 3px solid black;
+            text-align: center;
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .services {
+            background-color: #000000;
+            color: white;
+            margin-left: 41%;
+            width: 18%;
+        }
+    
+        .services:hover {
+            background-color: #fff;
+            color: #000000;
+        }
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:999px) {
+    .login {
+        margin-left: 260px;
+    }
+
+    .aboutimg {
+        width: 50vw;
+        height: 100vw;
+    }
+
+    .help {
+        height: 650px;
+        width: 100%;
+        background-image: linear-gradient(to top, #ffffff7e, #ffffff7e), url(./image/help.svg);
+        background-size: 100% 100%;
+    
+    
+        .helptext {
+            margin-left: 150px;
+        }
+    
+        .helpbox {
+            height: 470px;
+            width: 140px;
+            margin: 100px 20px;
+            border: 3px solid black;
+            text-align: center;
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .helpbox1 {
+            height: 470px;
+            width: 140px;
+            margin: 100px 0px;
+            border: 3px solid black;
+            text-align: center;
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .services {
+            background-color: #000000;
+            color: white;
+            margin-left: 41%;
+            width: 18%;
+        }
+    
+        .services:hover {
+            background-color: #fff;
+            color: #000000;
+        }
+    }
+}
+
+@media screen and (min-width:650px) and (max-width:799px) {
+    .login {
+        margin-left: 60px;
+    }
+
+    .about {
+        margin-left: 100px;
+    }
+
+    .aboutimg {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .help {
+        height: 650px;
+        width: 100%;
+        background-image: linear-gradient(to top, #ffffff7e, #ffffff7e), url(./image/help.svg);
+        background-size: 100% 100%;
+    
+    
+        .helptext {
+            margin-left: 150px;
+        }
+    
+        .helpbox {
+            height: 470px;
+            width: 140px;
+            margin: 100px 20px;
+            border: 3px solid black;
+            text-align: center;
+
+            h2 {
+                font-size: 2.5vw;
+            }
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .helpbox1 {
+            height: 470px;
+            width: 140px;
+            margin: 100px 0px;
+            border: 3px solid black;
+            text-align: center;
+
+            h2 {
+                font-size: 2.5vw;
+            }
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .services {
+            background-color: #000000;
+            color: white;
+            margin-left: 41%;
+            width: 18%;
+        }
+    
+        .services:hover {
+            background-color: #fff;
+            color: #000000;
+        }
+    }
+}
+
+@media screen and (min-width:575px) and (max-width:649px) {
+    .login {
+        margin-left: 20px;
+    }
+
+    .about {
+        margin-left: 100px;
+    }
+
+    .aboutimg {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .help {
+        height: 650px;
+        width: 100%;
+        background-image: linear-gradient(to top, #ffffff7e, #ffffff7e), url(./image/help.svg);
+        background-size: 100% 100%;
+    
+    
+        .helptext {
+            margin-left: 150px;
+        }
+    
+        .helpbox {
+            height: 470px;
+            width: 140px;
+            margin: 100px 20px;
+            border: 3px solid black;
+            text-align: center;
+
+            h2 {
+                font-size: 2.5vw;
+            }
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .helpbox1 {
+            height: 470px;
+            width: 140px;
+            margin: 100px 0px;
+            border: 3px solid black;
+            text-align: center;
+
+            h2 {
+                font-size: 2.5vw;
+            }
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .services {
+            background-color: #000000;
+            color: white;
+            margin-left: 41%;
+            width: 18%;
+        }
+    
+        .services:hover {
+            background-color: #fff;
+            color: #000000;
+        }
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:574px) {
+    .login {
+        margin-left: 0px;
+    }
+
+    .aboutimg {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .about {
+        margin-left: 70px;
+    }
+
+    .help {
+        height: 650px;
+        width: 100%;
+        background-image: linear-gradient(to top, #ffffff7e, #ffffff7e), url(./image/help.svg);
+        background-size: 100% 100%;
+    
+    
+        .helptext {
+            margin-left: 150px;
+        }
+    
+        .helpbox {
+            // height: 470px;
+            // width: 140px;
+            margin: 100px 20px;
+            border: 3px solid black;
+            text-align: center;
+
+
+            h2 {
+                font-size: 3.5vw;
+            }
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .helpbox1 {
+            // height: 470px;
+            // width: 140px;
+            margin: 100px 0px;
+            border: 3px solid black;
+            text-align: center;
+
+            h2 {
+                font-size: 3.5vw;
+            }
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .services {
+            background-color: #000000;
+            color: white;
+            margin-left: 41%;
+            width: 18%;
+        }
+    
+        .services:hover {
+            background-color: #fff;
+            color: #000000;
+        }
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:399px) {
+    .login {
+        margin-left: 0px;
+    }
+
+    .aboutimg {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .about {
+        margin-left: 50px;
+    }
+    .hr {
+        display: none;
+    }
+
+    .help {
+        height: 1000px;
+        width: 100%;
+        // background-image: linear-gradient(to top, #ffffff7e, #ffffff7e), url(./image/help.svg);
+        // background-size: 100% 100%;
+        // background-color: #57bbbf;
+    
+    
+        .helptext {
+            margin-left: 150px;
+        }
+    
+        .helpbox {
+            // height: 470px;
+            // width: 140px;
+            margin: 100px 20px;
+            border: 3px solid black;
+            text-align: center;
+
+
+            h2 {
+                font-size: 3.5vw;
+            }
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .helpbox1 {
+            // height: 470px;
+            // width: 140px;
+            margin: 100px 0px;
+            border: 3px solid black;
+            text-align: center;
+
+            h2 {
+                font-size: 3.5vw;
+            }
+    
+            .helpboxhr {
+                margin: 0px 10%;
+                border-top: 3px solid #000000;
+                opacity: 100%;
+            }
+    
+            .btn1 {
+                margin-top: 36%;
+            }
+        }
+    
+        .services {
+            background-color: #000000;
+            color: white;
+            margin-left: 41%;
+            width: 18%;
+        }
+    
+        .services:hover {
+            background-color: #fff;
+            color: #000000;
+        }
+    }
+}
