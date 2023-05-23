@@ -10,13 +10,15 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import about from "./image/about.svg";
+
+//Note:react routing from one to anoyher by href
 const App = () => {
   return (
     <>
       <Nav />
-      <Home />
+      <Home id="home"/>
       <Help />
-      <Footer />
+      <Footer id="footer"/>
     </>
   );
 };
@@ -26,20 +28,20 @@ const Nav = () => {
     <>
       <nav className="navbar navbar-expand-sm bg-light navbar-light fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#"><img src={logo} className="logo mx-5" /></a>
+          <a className="navbar-brand" href="#"><img src={logo} className="logo" /></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#">Home</a>
+                <a className="nav-link" href="#home">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">About&nbsp;Us</a>
+                <a className="nav-link" href="#about">About&nbsp;Us</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
+                <a className="nav-link" href="#footer">Contact</a>
               </li>
               <li className="nav-item login">
                 <a className="nav-link" href="#">
@@ -63,7 +65,7 @@ const Home = () => {
         <p>Now Available for Online Coaching</p>
       </div>
       <div>
-        <About />
+        <About id="about"/>
       </div>
     </>
   );
@@ -72,13 +74,13 @@ const Home = () => {
 const About = () => {
   return (
     <>
-      <div className="row container-fluid">
+      <div className="row container-fluid ">
         <div className="col bg-white about">
           <hr className="mt-5 hr" />
           <h1 className="mt-2">ABOUT<br />US</h1>
-          <p className="mt-5">I'm a paragraph. Click here to add your own text and edit me. It’s easy. I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.</p>
-          <p className="mt-5">This is a great space to write long text about your company and your services.I'm a paragraph. Click here to add your own text and edit me. It’s easy.  You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
-          <div className="btn bg-dark text-light mt-5 ">Submit</div>
+          <p className="mt-4">I'm a paragraph. Click here to add your own text and edit me. It’s easy. I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.</p>
+          <p className="mt-4">This is a great space to write long text about your company and your services.I'm a paragraph. Click here to add your own text and edit me. It’s easy.  You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
+          <div className="btn bg-dark text-light mt-4 Submitbtn">Submit</div>
         </div>
         <div className="col container">
           <img src={about} className="aboutimg" />
@@ -93,7 +95,7 @@ const Help = () => {
     <>
       <div className="help border-top border-white container-fluid p-0 m-0">
         <div className="helptext">
-          <hr className="mt-5 hr" />
+          <hr className="hr" />
           <h1>How I Can<br /> Help You</h1>
         </div>
         <div className="row m-0 p-0">
@@ -120,7 +122,7 @@ const Help = () => {
             <p>Mon, Tue, Wed, Thu, Fri</p>
             <p>1 hr</p>
             <p>&#x20b9; 90</p>
-            <div className="btn bg-black text-light px-5 mt-4">Book It</div>
+            <div className="btn bg-black text-light px-5">Book It</div>
           </div>
         </div>
         <div className="btn services">More services</div>
@@ -133,40 +135,40 @@ const Footer = () => {
   return (
     <>
       <div className="footerbg container-fluid">
-        <div className="row container ms-5">
-        <div className="col ms-5">
-          <hr className="mt-5 hr" />
-          <h2>CONTACT</h2>
-          <p className="mt-5">500 Terry Francine Street,<br/>San Francisco, CA 94158</p>
-          <p className="mt-4 mb-0">Tel: 123-456-7890</p>
-          <p>Fax: 123-456-7890</p>
-          <p className="mt-4">info@mysite.com</p>
-          <div className="row">
-            <div className="col">
-              <div className="row">
-              <div className="col footericon"><FaFacebookF/></div>
-              <div className="col footericon"><FaTelegramPlane/></div>
-              <div className="col footericon"><FaTwitter/></div>
-              <div className="col footericon"><FaWhatsapp/></div>
-              </div>
-            </div>
-            <div className="col-7"></div>
+        <div className="row container p-0 m-0">
+          <div className="col">
+            <form className="mt-5">
+              <label>Enter Your Name</label>
+              <input type="text" className="form-control" />
+              <label>Enter Your Email *</label>
+              <input type="text" className="form-control" />
+              <label>Enter Your Subject</label>
+              <input type="text" className="form-control" />
+              <label>Message</label>
+              <textarea rows="6" cols="30" className="form-control"></textarea>
+              <button className="btn bg-black text-white my-5 subbtn">Submit</button>
+            </form>
           </div>
-          <p className="mt-5">© 2035 by Personal Life Coach. <br/>Powered and secured by Wix</p>
-        </div>
-        <div className="col me-5">
-          <form className="mt-5">
-          <label>Enter Your Name</label>
-          <input type="text" className="form-control"/>
-          <label>Enter Your Email *</label>
-          <input type="text" className="form-control"/>
-          <label>Enter Your Subject</label>
-          <input type="text" className="form-control"/>
-          <label>Message</label>
-          <textarea rows="6" cols="30" className="form-control"></textarea>
-          <button className="btn bg-black text-white w-25 my-5">Submit</button>
-          </form>
-        </div>
+          <div className="col footercoltwo">
+            <hr className="hr" />
+            <h2>CONTACT</h2>
+            <p className="mt-4">500 Terry Francine Street,<br />San Francisco, CA 94158</p>
+            <p className="mt-4 mb-0">Tel: 123-456-7890</p>
+            <p>Fax: 123-456-7890</p>
+            <p className="mt-4">info@mysite.com</p>
+            <div className="row">
+              <div className="col">
+                <div className="row">
+                  <div className="col footericon"><FaFacebookF /></div>
+                  <div className="col footericon"><FaTelegramPlane /></div>
+                  <div className="col footericon"><FaTwitter /></div>
+                  <div className="col footericon"><FaWhatsapp /></div>
+                </div>
+              </div>
+              <div className="col"></div>
+            </div>
+            <p className="mb-5">© 2035 by Personal Life Coach. <br />Powered and secured by Wix</p>
+          </div>
         </div>
       </div>
     </>
