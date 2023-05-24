@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #07142d;
+}
+
+nav {
+  background: #13264d;
+  height: 70px;
+}
+nav .logo {
+  height: 40px;
+  width: 40px;
+  margin-top: 12px;
+}
+nav span {
+  font-size: 34px;
+}
+nav .menu1 {
+  font-size: large;
+  margin: 20px 0px 0px 500px;
+  padding-bottom: 13px;
+  border-bottom: 3px solid #fff;
+  font-family: "Sofia Pro";
+}
+nav .menu {
+  font-size: large;
+  margin: 20px 0px 0px 15px;
+  font-family: "Sofia Pro";
+}
+nav .buttons {
+  border-radius: 8%;
+  height: 40px;
+  margin: 15px 0 0 15px;
+}
+
+.ellipse {
+  height: 650px;
+  width: 100%;
+}
+.ellipse .ellipse1 {
+  height: 500px;
+  width: 100%;
+  margin: 5% auto;
+  position: absolute;
+}
+.ellipse .ellipse2 {
+  height: 400px;
+  width: 100%;
+  margin: 8.5% 0;
+  position: absolute;
+}
+.ellipse .ellipse3 {
+  height: 300px;
+  width: 100%;
+  margin: 12% 0;
+  position: absolute;
+}
+.ellipse .ellipse4 {
+  height: 200px;
+  width: 100%;
+  margin: 16% 0;
+  position: absolute;
+}
+.ellipse .blue {
+  position: absolute;
+  margin: 3.9% 0 0 53%;
+}
+.ellipse .pink {
+  position: absolute;
+  margin: 40.2% 0 0 48%;
+}
+
+.plantext {
+  position: absolute;
+  color: #fff;
+  width: 1000px;
+  margin: 140px 0 0 200px;
+}
+.plantext h1 {
+  font-size: 50px;
+}
+.plantext .planp {
+  font-size: 19px;
+}
+.plantext .btn1 {
+  background: #3DBCA1;
+  color: #fff;
+  font-family: "Sofia Pro";
+}
+.plantext .roboimg {
+  position: absolute;
+  height: 225px;
+  left: 700px;
+  top: -30px;
+  z-index: 10;
+}
+.plantext h2 {
+  color: #FFC727;
+  font-family: "Sofia Pro";
+  font-style: normal;
+  position: absolute;
+  top: 190px;
+  left: 710px;
+}
+.plantext .rop {
+  color: #fff;
+  font-family: "Sofia Pro";
+  font-style: normal;
+  position: absolute;
+  top: 225px;
+  left: 745px;
+}
+
+.slider2 .slide2heading {
+  text-align: center;
+  color: #fff;
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-size: 50px;
+}
+.slider2 p {
+  text-align: center;
+  color: #3DBCA1;
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-size: 23px;
+}/*# sourceMappingURL=Figma_1.css.map */
