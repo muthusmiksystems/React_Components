@@ -135,19 +135,114 @@ nav {
     }
 }
 
-.slider2 {
-    .slide2heading {
-        text-align: center;
+.slider {
+    .slider2 {
+        .slide2heading {
+            text-align: center;
+            color: $text-color;
+            font-family: 'Sofia Pro';
+            font-style: normal;
+            font-size: 50px;
+        }
+
+        p {
+            text-align: center;
+            color: $button;
+            font-family: 'Sofia Pro';
+            font-style: normal;
+            font-size: 23px;
+        }
+    }
+
+    .a {
+        position: absolute;
+        margin-top: 15px;
+        margin-left: -100px;
+    }
+
+    .btn1 {
+        background: $button;
         color: $text-color;
         font-family: 'Sofia Pro';
-        font-style: normal;
-        font-size: 50px;
     }
-    p{
-        text-align: center;
-        color: $button;
-        font-family: 'Sofia Pro';
-        font-style: normal;
-        font-size: 23px;
+}
+
+.slider3 {
+    .sliderhe {
+        .slide3heading {
+            text-align: center;
+            color: $text-color;
+            font-family: 'Sofia Pro';
+            font-style: normal;
+            font-size: 50px;
+            margin-top: 100px;
+        }
+    }
+
+    .astro {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        margin: 30px 0 0 50px;
+    }
+
+    .astroflight {
+        height: 200px;
+        width: 195px;
+        margin: -30px 0 40px 0;
+    }
+
+    .line {
+        height: 1000px;
+        margin: 108px 0 0 90px;
+    }
+
+    .box1 {
+        p {
+            margin-top: 60px;
+            padding: 0 22%;
+            font-family: 'Sofia Pro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 28px;
+            word-spacing: 5px;
+        }
+
+        .stl1img {
+            position: absolute;
+            margin: 120px 0 0 40px;
+        }
+
+        .lemob1 {
+            margin: 25px 0 0 45px;
+        }
+
+    }
+
+    .box2 {
+        .str1img {
+            float: right;
+            margin: 300px 80px 0 0px;
+        }
+        p{
+            margin-top: 420px;
+            padding: 0 14%;
+            font-family: 'Sofia Pro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 28px;
+            word-spacing: 5px;
+        }
+        .remob1{
+            .remob1top{
+                margin: 30px 0px 0px 80px;
+            }
+            .remob1bot{
+                
+                margin: -160px -100px 0px 0px;
+            }
+        }
     }
 }
