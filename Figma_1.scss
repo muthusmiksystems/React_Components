@@ -79,11 +79,37 @@ nav {
     .blue {
         position: absolute;
         margin: 3.9% 0 0 53%;
+        animation: blu 15s;
+        animation-iteration-count: infinite;
+
+        @keyframes blu {
+            0% {
+                transform: translate(0px, 0px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(0px, 0px) rotate(360deg);
+            }
+        }
     }
+
 
     .pink {
         position: absolute;
         margin: 40.2% 0 0 48%;
+
+        animation: pin 15s;
+        animation-iteration-count: infinite;
+
+        @keyframes pin {
+            0% {
+                transform: translate(0px, 0px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(0px, 0px) rotate(360deg);
+            }
+        }
     }
 }
 
@@ -114,6 +140,23 @@ nav {
         left: 700px;
         top: -30px;
         z-index: 10;
+        animation-name: robo;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes robo {
+        from {
+
+            top: -25px;
+        }
+
+        to {
+
+            top: -100px;
+        }
     }
 
     h2 {
@@ -184,16 +227,80 @@ nav {
         width: 100px;
         position: absolute;
         margin: 30px 0 0 50px;
+        animation: astro 15s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes astro {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        10% {
+            transform: translate(-1px, -2px) rotate(-10deg);
+        }
+
+        20% {
+            transform: translate(-3px, 0px) rotate(10deg);
+        }
+
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+            transform: translate(1px, -1px) rotate(10deg);
+        }
+
+        50% {
+            transform: translate(-1px, 2px) rotate(-10deg);
+        }
+
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            transform: translate(3px, 1px) rotate(-10deg);
+        }
+
+        80% {
+            transform: translate(-1px, -1px) rotate(10deg);
+        }
+
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(1px, -2px) rotate(-10deg);
+        }
     }
 
     .astroflight {
         height: 200px;
         width: 195px;
-        margin: -30px 0 40px 0;
+        margin: -35px 0 40px 0;
+        animation: shake 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        100% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
     }
 
     .line {
-        height: 1000px;
+        height: 1495px;
         margin: 108px 0 0 90px;
     }
 
@@ -216,6 +323,16 @@ nav {
 
         .lemob1 {
             margin: 25px 0 0 45px;
+            height: 600px;
+        }
+
+        .stl2img {
+            margin: 100px 0 0 50px;
+        }
+
+        .lemob2 {
+            margin: 25px 0 0 40px;
+            height: 600px;
         }
 
     }
@@ -225,7 +342,8 @@ nav {
             float: right;
             margin: 300px 80px 0 0px;
         }
-        p{
+
+        p {
             margin-top: 420px;
             padding: 0 14%;
             font-family: 'Sofia Pro';
@@ -235,14 +353,429 @@ nav {
             line-height: 28px;
             word-spacing: 5px;
         }
-        .remob1{
-            .remob1top{
+
+        .remob1 {
+
+            .remob1top {
                 margin: 30px 0px 0px 80px;
+                height: 600px;
             }
-            .remob1bot{
-                
+
+            .remob1bot {
                 margin: -160px -100px 0px 0px;
             }
         }
+
+        .str2img {
+            margin: -300px 0 0 65px;
+        }
+
+        .message {
+            position: absolute;
+            margin: 360px 0 0 -590px;
+        }
     }
+}
+
+.slider4 {
+    .slider4he {
+        .slide4heading {
+            text-align: center;
+            color: $text-color;
+            font-family: 'Sofia Pro';
+            font-style: normal;
+            font-size: 50px;
+            margin-top: 70px;
+        }
+
+        .stl3 {
+            position: absolute;
+            margin: 0 0 0 30px;
+        }
+    }
+
+    .st1 {
+        .stubox1 {
+            height: 250px;
+            margin-top: 70px;
+        }
+
+        .stimg1 {
+            height: 140px;
+            margin-top: 45px;
+        }
+
+        h3 {
+            color: $text-color;
+            font-family: 'Sofia Pro';
+            margin-left: 25px;
+        }
+
+        p {
+            font-family: 'Sofia Pro';
+            width: 370px;
+            font-size: 18px;
+            line-height: 23px;
+            color: $text-color;
+            margin-left: 25px;
+        }
+    }
+
+    .str3 {
+        margin: 50px 0px 30px 1150px;
+    }
+
+    .st2 {
+        text-align: right;
+
+        .stimg2 {
+            height: 140px;
+        }
+
+        h3 {
+            color: $text-color;
+            font-family: 'Sofia Pro';
+            margin-right: 25px;
+        }
+
+        p {
+            font-family: 'Sofia Pro';
+            width: 370px;
+            font-size: 18px;
+            line-height: 23px;
+            color: $text-color;
+            float: right;
+            margin-right: 25px;
+        }
+
+        .stubox2 {
+            height: 250px;
+            margin-top: 45px;
+        }
+    }
+
+    .stl4 {
+        margin: 50px 0px 30px 50px;
+    }
+
+    .st3 {
+        .stubox3 {
+            height: 250px;
+            margin-top: 45px;
+        }
+
+        .stimg3 {
+            height: 140px;
+        }
+
+        h3 {
+            color: $text-color;
+            font-family: 'Sofia Pro';
+            margin-left: 25px;
+        }
+
+        p {
+            font-family: 'Sofia Pro';
+            width: 370px;
+            font-size: 18px;
+            line-height: 23px;
+            color: $text-color;
+            margin-left: 25px;
+        }
+    }
+
+    .str4 {
+        margin: 50px 0px 30px 1150px;
+    }
+
+    .st4 {
+        text-align: right;
+
+        .stimg4 {
+            height: 140px;
+        }
+
+        h3 {
+            color: $text-color;
+            font-family: 'Sofia Pro';
+            margin-right: 25px;
+        }
+
+        p {
+            font-family: 'Sofia Pro';
+            width: 370px;
+            font-size: 18px;
+            line-height: 23px;
+            color: $text-color;
+            float: right;
+            margin-right: 25px;
+        }
+
+        .stubox4 {
+            height: 250px;
+            margin-top: 45px;
+        }
+    }
+
+    .btn1 {
+        background: $button;
+        color: $text-color;
+        font-family: 'Sofia Pro';
+        font-size: 19px;
+        margin: 80px 0 50px 0;
+    }
+
+}
+
+.slide5 {
+    .slider5he {
+        .slide5heading {
+            text-align: center;
+            font-family: 'Sofia Pro';
+            font-size: 50px;
+            margin-top: 100px;
+            color: $button;
+        }
+
+        h6 {
+            text-align: center;
+            font-family: 'Sofia Pro';
+            color: $text-color;
+            font-size: 30px;
+        }
+    }
+
+    .coimg1 {
+        margin-top: 70px;
+
+        .st5img1 {
+            height: 160px;
+            width: 450px;
+        }
+
+        p {
+            color: $button;
+            position: absolute;
+            font-size: 14px;
+            margin: -32px 0 0 370px;
+        }
+
+        .st5img2 {
+            height: 140px;
+            margin: 10px 0px;
+            width: 450px;
+        }
+
+        .st5img3 {
+            height: 160px;
+            width: 450px;
+        }
+    }
+
+    .coimg2 {
+        margin-top: 55px;
+
+        .st5img4 {
+            height: 252px;
+            width: 450px;
+        }
+
+        .st5img5 {
+            height: 158px;
+            width: 450px;
+        }
+
+        p {
+            color: #FC7A42;
+            position: absolute;
+            margin: -32px 0 0 20px;
+            font-size: 14px;
+        }
+
+        .st5img6 {
+            height: 70px;
+            margin-top: 10px;
+        }
+    }
+
+    .leftaro {
+        position: absolute;
+        margin: 290px 0 0 70px;
+    }
+
+    .rightaro {
+        position: absolute;
+        margin: 290px 0 0 70px;
+    }
+
+    .slider5twobox {
+        margin-top: 150px;
+
+        .pro {
+            height: 505px;
+            width: 405px;
+        }
+        .stl1 {
+            margin: 0px 0 0 40px;
+        }
+
+        .st11 {
+            margin: 170px 0 0 20px;
+        }
+
+        .Capture {
+            margin-top: 90px;
+            animation-name: Captu;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes Captu {
+            from {
+
+                top: 90px;
+            }
+
+            to {
+
+                top: 0px;
+            }
+        }
+
+        
+
+        .proplus {
+            height: 500px;
+            width: 400px;
+        }
+
+        .btn2 {
+            color: #961e54;
+            margin: -40px 0 0 120px;
+        }
+
+        .btn3 {
+            color: #961e54;
+            margin: -40px 0 0 140px;
+        }
+
+        .para {
+            text-decoration: underline;
+            color: $button;
+            margin-top: -17px;
+        }
+
+        .but4 {
+            color: $text-color;
+            background: $button;
+            width: 200px;
+            margin-left: 580px;
+        }
+
+    }
+
+    .slider5threebox {
+        .coach {
+            height: 450px;
+            margin: 70px 0 90px 200px;
+        }
+    }
+
+}
+
+.slide6 {
+    .slider6he {
+        .slide6heading {
+            text-align: center;
+        }
+    }
+
+    .box1 {
+        height: 200px;
+        width: 200px;
+    }
+
+    .box1t {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        margin: 30px 0 0 -172px;
+    }
+
+    .box2 {
+        height: 130px;
+        margin-top: 36px;
+    }
+
+    .box3text {
+        position: absolute;
+        margin: 60px 0 0 20px;
+
+        .user {
+            margin: -30px 0 0 100px;
+        }
+    }
+
+    .bgbox {
+        width: 200px;
+        margin-left: 12px;
+    }
+
+    .bgbox1 {
+        width: 200px;
+        margin-left: 5px;
+    }
+
+    .bgbox2 {
+        width: 200px;
+        margin-left: -5px;
+    }
+
+    .bgbox4 {
+        width: 200px;
+        margin-left: -15px;
+    }
+}
+
+.slide7 {
+    text-align: center;
+
+    h1 {
+        text-align: center;
+        font-family: 'Sofia Pro';
+        font-size: 40px;
+        margin-top: 80px;
+        color: $text-color;
+    }
+
+    .teme1 {
+        height: 250px;
+    }
+
+    .bun5 {
+        color: $text-color;
+        background: $button;
+        margin: 80px 0;
+    }
+
+}
+
+.hr {
+    color: $button;
+    background: $button;
+    height: 3px !important;
+    opacity: 100%;
+}
+
+.socicon {
+    height: 45px;
+    margin-top: 170px;
+}
+
+.footer {
+    background: #132549;
+    font-size: 12px;
+    color: gray;
 }
