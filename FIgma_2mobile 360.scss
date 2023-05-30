@@ -1,0 +1,139 @@
+$nav-background: #13264d;
+$background: #07142d;
+$text-color: #fff;
+$button: #3DBCA1;
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $background;
+}
+
+nav {
+    background: $nav-background;
+    height: 70px;
+    width: 100%;
+
+    .logo {
+        height: 35px;
+        width: 35px;
+        margin-top: 5px;
+    }
+
+    span {
+        font-size: 26px;
+    }
+    #collapsibleNavbar{
+        background: $nav-background;
+        z-index: 10;
+    }
+}
+
+.ellipse {
+    
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+
+    .ellipse1 {
+
+        height: 500px;
+        width: 500px;
+        margin-top: -70px;
+        margin-left: -80px;
+        // position: absolute;
+        overflow: hidden;
+    }
+
+    .ellipse2 {
+        height: 400px;
+        width: 400px;
+        margin-top: -530px;
+        margin-left: -25px;
+        // position: absolute;
+    }
+
+    .ellipse3 {
+        height: 300px;
+        width: 300px;
+        margin-top: -578px;
+        margin-left: 25px;
+        // position: absolute;
+    }
+
+    .ellipse4 {
+        height: 200px;
+        width: 200px;
+        margin-top: -630px;
+        margin-left: 73px;
+        // position: absolute;
+    }
+
+    .blue {
+        position: absolute;
+        margin-top: -379px;
+        animation: blu 15s;
+        height: 25px;
+        width: 25px;
+        animation-iteration-count: infinite;
+
+        @keyframes blu {
+            0% {
+                transform: translate(0px, 0px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(0px, 0px) rotate(360deg);
+            }
+        }
+    }
+
+
+    .pink {
+        position: absolute;
+        margin-top: -212px;
+        margin-left: -200px;
+        animation: pin 15s;
+        height: 25px;
+        width: 25px;
+        animation-iteration-count: infinite;
+
+        @keyframes pin {
+            0% {
+                transform: translate(0px, 0px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(0px, 0px) rotate(360deg);
+            }
+        }
+    }
+}
+
+.homecontent{
+    position: absolute;
+
+    h1{
+        text-align: center;
+        margin: 25px 0 0 50px;
+        font-family: 'Sofia Pro';
+        font-size: xx-large;
+    }
+
+    p{
+        font-family: 'Sofia Pro';
+        margin: 25px 0 0 60px;
+        width: 250px;
+        text-align: center;
+    }
+
+    .btn1 {
+        background: $button;
+        color: $text-color;
+        font-family: 'Sofia Pro';
+    }
+}
+
+.robo{
+    
+}
